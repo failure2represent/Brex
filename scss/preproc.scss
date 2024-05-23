@@ -454,11 +454,15 @@ $main_color: #212121;
         margin: auto;
         max-width: 1200px;
         padding-top: 251px;
+        display: flex;
         article{
             text-align: center;
             margin-bottom: 227px;
+            position: relative;
             img{
                 margin-bottom: 49px;
+                width: inherit;
+                display: inline;
             }
             h3{
                 padding: 0px 250px;
@@ -474,6 +478,51 @@ $main_color: #212121;
                 letter-spacing: 0.02em;
                 color: $main_color;
                 font-family: $main_font;
+            }
+        }
+        .owl-nav{
+            button{
+                &.owl-next{
+                    position: absolute;
+                    top: 50%;
+                    &:after{
+                        content: "";
+                        background-image: url(../images/right_arrow_orange.svg);
+                        display: block;
+                        width: 40px;
+                        height: 40px;
+                        background-repeat: no-repeat;
+                        scale: 2;
+
+                    }
+                    span{
+                        display: none;
+                    }
+                }
+                &.owl-prev{
+                    left: 60px;
+                    position: absolute;
+                    top: 50%;
+                    &:after{
+                        content: "";
+                        background-image: url(../images/right_arrow_orange.svg);
+                        display: block;
+                        width: 40px;
+                        height: 40px;
+                        background-repeat: no-repeat;
+                        scale: 2;
+
+                    }
+                    span{
+                        display: none;
+                    }
+                    &:after{
+                        transform: rotate(180deg);
+                    }
+                }
+                &.owl-next{
+                    right: 60px
+                }
             }
         }
     }
