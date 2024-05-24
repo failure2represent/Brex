@@ -1,5 +1,6 @@
 $main_font: 'robotoregular';
 $main_color: #212121;
+$second_color: #f46a35;
 
 @font-face {
     font-family: 'robotoregular';
@@ -93,7 +94,7 @@ $main_color: #212121;
                 }
                 &:hover{
                     a{
-                        color: #f46a35;
+                        color: $second_color;
                     }
                     svg{
                         transform: rotate(180deg);
@@ -115,8 +116,8 @@ $main_color: #212121;
             letter-spacing: 0.01em;
             color: $main_color;
             &:last-of-type{
-                background: #f46a35;
-                border: 1px solid #f46a35;
+                background: $second_color;
+                border: 1px solid $second_color;
                 border-radius: 10px;
                 padding: 7px 26px;
                 color: #fff;
@@ -126,7 +127,7 @@ $main_color: #212121;
                 }
             }
             &:hover{
-                color: #f46a35;
+                color: $second_color;
             }
         }
     }
@@ -164,12 +165,12 @@ $main_color: #212121;
                     padding: 13px 32px;
                     margin-right: 8px;
                     &:hover{
-                        color: #f46a35;
-                        border: 1px solid #f46a35;
+                        color: $second_color;
+                        border: 1px solid $second_color;
                     }
                     &:first-of-type{
-                        border: 1px solid #f46a35;
-                        background: #f46a35;
+                        border: 1px solid $second_color;
+                        background: $second_color;
                         color: #fff;
                         &:hover{
                             color: #f2f2f2;
@@ -208,7 +209,7 @@ $main_color: #212121;
                     font-family: $main_font;
                     font-size: 16px;
                     line-height: 150%;
-                    color: #f46a35;
+                    color: $second_color;
                     &:after{
                         display: block;
                         content: "";
@@ -285,7 +286,7 @@ $main_color: #212121;
                     color: #fff;
                     font-family: $main_font;
                     &:hover{
-                        color: #f46a35;
+                        color: $second_color;
                     }
                 }
                 h3{
@@ -358,8 +359,8 @@ $main_color: #212121;
                 color: $main_color;
                 padding: 13px 21px;
                 &:hover{
-                    color: #f46a35;
-                    border: 1px solid #f46a35;
+                    color: $second_color;
+                    border: 1px solid $second_color;
                 }
             }
         }
@@ -564,7 +565,7 @@ $main_color: #212121;
                     font-family: $main_font;
                     font-size: 16px;
                     line-height: 150%;
-                    color: #f46a35;
+                    color: $second_color;
                     &:after{
                         display: block;
                         content: "";
@@ -647,8 +648,8 @@ $main_color: #212121;
                 padding: 13px 32px;
                 margin-right: 8px;
                 &:first-of-type{
-                    border: 1px solid #f46a35;
-                    background: #f46a35;
+                    border: 1px solid $second_color;
+                    background: $second_color;
                     color: #fff;
                     &:hover{
                         color: #f2f2f2;
@@ -656,8 +657,8 @@ $main_color: #212121;
                     }
                 }
                 &:hover{
-                    color: #f46a35;
-                    border: 1px solid #f46a35;
+                    color: $second_color;
+                    border: 1px solid $second_color;
                 }
             }
 
@@ -707,7 +708,7 @@ footer{
                         }
                         &:hover{
                             a{
-                                color: #f46a35
+                                color: $second_color
                             }
                         }
                     }
@@ -728,7 +729,7 @@ footer{
                     &:hover{
                         svg{
                             path{
-                                fill: #f46a35;
+                                fill: $second_color;
                             }
                         }
                     }
