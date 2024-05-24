@@ -140,17 +140,9 @@
   margin-right: 8px;
 }
 .banner .banner_container .banner_container_left article a:hover {
-  color: #f46a35;
-  border: 1px solid #f46a35;
-}
-.banner .banner_container .banner_container_left article a:first-of-type {
-  border: 1px solid #f46a35;
   background: #f46a35;
   color: #fff;
-}
-.banner .banner_container .banner_container_left article a:first-of-type:hover {
-  color: #f2f2f2;
-  background: #e06030;
+  border: 1px solid #f46a35;
 }
 .banner .banner_container .banner_container_left div {
   padding-bottom: 31px;
@@ -310,10 +302,12 @@
   padding: 0px 65px;
 }
 
+.spend_limits {
+  background: #f9f9f9;
+}
 .spend_limits .spend_limits_container {
   margin: auto;
   max-width: 1200px;
-  background: #f9f9f9;
   padding-top: 95px;
   padding-left: 48px;
   padding-bottom: 80px;
@@ -349,7 +343,8 @@
   padding: 13px 21px;
 }
 .spend_limits .spend_limits_container .limits_flex_top a:hover {
-  color: #f46a35;
+  color: #fff;
+  background: #f46a35;
   border: 1px solid #f46a35;
 }
 .spend_limits .spend_limits_container .limits_flex_bottom {
@@ -587,10 +582,12 @@
   padding: 75px 82px;
 }
 
+.banner_bottom {
+  background: #f9f9f9;
+}
 .banner_bottom .banner_bottom_container {
   max-width: 1200px;
   margin: auto;
-  background: #f9f9f9;
   padding: 32px 48px;
   display: flex;
 }
@@ -625,28 +622,22 @@
   padding: 13px 32px;
   margin-right: 8px;
 }
-.banner_bottom .banner_bottom_container .banner_bottom_left a:first-of-type {
+.banner_bottom .banner_bottom_container .banner_bottom_left a:hover {
+  color: #fff;
   border: 1px solid #f46a35;
   background: #f46a35;
-  color: #fff;
-}
-.banner_bottom .banner_bottom_container .banner_bottom_left a:first-of-type:hover {
-  color: #f2f2f2;
-  background-color: #e06030;
-}
-.banner_bottom .banner_bottom_container .banner_bottom_left a:hover {
-  color: #f46a35;
-  border: 1px solid #f46a35;
 }
 .banner_bottom .banner_bottom_container .banner_bottom_right img {
   position: relative;
   left: 20px;
 }
 
+footer {
+  background: #171717;
+}
 footer .footer_container {
   margin: auto;
   max-width: 1200px;
-  background: #171717;
   padding: 122px 0px 0px 48px;
 }
 footer .footer_container .footer_top_flex {

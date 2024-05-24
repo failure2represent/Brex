@@ -165,17 +165,9 @@ $second_color: #f46a35;
                     padding: 13px 32px;
                     margin-right: 8px;
                     &:hover{
-                        color: $second_color;
-                        border: 1px solid $second_color;
-                    }
-                    &:first-of-type{
-                        border: 1px solid $second_color;
                         background: $second_color;
                         color: #fff;
-                        &:hover{
-                            color: #f2f2f2;
-                            background:  #e06030;
-                        }
+                        border: 1px solid $second_color;
                     }
                 }
             }
@@ -346,10 +338,10 @@ $second_color: #f46a35;
     }
 }
 .spend_limits{
+    background: #f9f9f9;
     .spend_limits_container{
         margin: auto;
         max-width: 1200px;
-        background: #f9f9f9;
         padding-top: 95px;
         padding-left: 48px;
         padding-bottom: 80px;
@@ -382,7 +374,8 @@ $second_color: #f46a35;
                 color: $main_color;
                 padding: 13px 21px;
                 &:hover{
-                    color: $second_color;
+                    color: #fff;
+                    background: $second_color;
                     border: 1px solid $second_color;
                 }
             }
@@ -635,10 +628,10 @@ $second_color: #f46a35;
     }
 }
 .banner_bottom{
+    background: #f9f9f9;
     .banner_bottom_container{
         max-width: 1200px;
         margin: auto;
-        background: #f9f9f9;
         padding: 32px 48px;
         display: flex;
         .banner_bottom_left{
@@ -670,18 +663,10 @@ $second_color: #f46a35;
                 border-radius: 10px;
                 padding: 13px 32px;
                 margin-right: 8px;
-                &:first-of-type{
+                &:hover{
+                    color: #fff;
                     border: 1px solid $second_color;
                     background: $second_color;
-                    color: #fff;
-                    &:hover{
-                        color: #f2f2f2;
-                        background-color: #e06030;
-                    }
-                }
-                &:hover{
-                    color: $second_color;
-                    border: 1px solid $second_color;
                 }
             }
 
@@ -695,10 +680,11 @@ $second_color: #f46a35;
     }
 }
 footer{
+    background: #171717;
     .footer_container{
         margin: auto;
         max-width: 1200px;
-        background: #171717;
+
         padding: 122px 0px 0px 48px;
         .footer_top_flex{
             display: flex;
