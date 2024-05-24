@@ -176,24 +176,22 @@
   font-size: 16px;
   line-height: 150%;
   color: #f46a35;
+  width: 22%;
 }
-.banner .banner_container .banner_container_left div a:after {
-  display: block;
-  content: "";
-  background-image: url(../images/right_arrow_orange.svg);
-  width: 15px;
-  height: 15px;
-  background-size: contain;
+.banner .banner_container .banner_container_left div a svg {
   position: relative;
-  top: 5px;
-  margin-left: 4px;
+  top: 5.5px;
+  margin-left: 5px;
+  transition: transform 0.3s;
 }
 .banner .banner_container .banner_container_left div a:hover {
   color: #e06030;
 }
-.banner .banner_container .banner_container_left div a:hover:after {
-  content: "";
-  background-image: url(../images/right_arrow_orange_hover.svg);
+.banner .banner_container .banner_container_left div a:hover svg {
+  transform: translateX(4px);
+}
+.banner .banner_container .banner_container_left div a:hover svg path {
+  fill: #e06030;
 }
 .banner .banner_container .banner_container_right img {
   width: 600px;
@@ -541,24 +539,22 @@
   font-size: 16px;
   line-height: 150%;
   color: #f46a35;
+  width: 45%;
 }
-.blog .blog_container .blog_bottom_flex article a:after {
-  display: block;
-  content: "";
-  background-image: url(../images/right_arrow_orange.svg);
-  width: 15px;
-  height: 15px;
-  background-size: contain;
+.blog .blog_container .blog_bottom_flex article a svg {
+  margin-left: 5px;
   position: relative;
-  top: 5px;
-  margin-left: 4px;
+  top: 6px;
+  transition: transform 0.3s;
 }
 .blog .blog_container .blog_bottom_flex article a:hover {
   color: #e06030;
 }
-.blog .blog_container .blog_bottom_flex article a:hover:after {
-  content: "";
-  background-image: url(../images/right_arrow_orange_hover.svg);
+.blog .blog_container .blog_bottom_flex article a:hover svg {
+  transform: translateX(4px);
+}
+.blog .blog_container .blog_bottom_flex article a:hover svg path {
+  fill: #e06030;
 }
 
 .companies_logos2 .companies_logos2_container {

@@ -202,22 +202,20 @@ $second_color: #f46a35;
                     font-size: 16px;
                     line-height: 150%;
                     color: $second_color;
-                    &:after{
-                        display: block;
-                        content: "";
-                        background-image: url(../images/right_arrow_orange.svg);
-                        width: 15px;
-                        height: 15px;
-                        background-size: contain;
+                    width: 22%;
+                    svg{
                         position: relative;
-                        top: 5px;
-                        margin-left: 4px;
+                        top: 5.5px;
+                        margin-left: 5px;
+                        transition: transform 0.3s;
                     }
                     &:hover{
                         color: #e06030;
-                        &:after{
-                            content: "";
-                            background-image: url(../images/right_arrow_orange_hover.svg);
+                        svg{
+                            transform: translateX(4px);
+                            path{
+                                fill: #e06030;
+                            }
                         }
                     }
                 }
@@ -582,22 +580,20 @@ $second_color: #f46a35;
                     font-size: 16px;
                     line-height: 150%;
                     color: $second_color;
-                    &:after{
-                        display: block;
-                        content: "";
-                        background-image: url(../images/right_arrow_orange.svg);
-                        width: 15px;
-                        height: 15px;
-                        background-size: contain;
+                    width: 45%;
+                    svg{
+                        margin-left: 5px;
                         position: relative;
-                        top: 5px;
-                        margin-left: 4px;
+                        top: 6px;
+                        transition: transform 0.3s;
                     }
                     &:hover{
                         color: #e06030;
-                        &:after{
-                            content: "";
-                            background-image: url(../images/right_arrow_orange_hover.svg);
+                        svg{
+                            transform: translateX(4px);
+                            path{
+                                fill: #e06030;
+                            }
                         }
                     }
                 }
