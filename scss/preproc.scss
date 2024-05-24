@@ -244,6 +244,29 @@ $second_color: #f46a35;
         margin: auto;
         max-width: 1200px;
         margin-bottom: 208px;
+        .owl-stage-outer{
+            width: 98%;
+            display: flex;
+            margin: auto;
+            .owl-stage{
+                display: flex;
+                align-items: center;
+            }
+        }
+        article{
+            display: flex;
+            justify-content: end;
+            img{
+                scale: 0.7;
+            }
+            #sc_lg, #dl_lg, #arb_lg{
+                scale: 0.5
+            }
+            #sc_lg, #dl_lg{
+                position: relative;
+                bottom: 2px
+            }
+        }
     }
 }
 .brex_solutions{

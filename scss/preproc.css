@@ -213,6 +213,29 @@
   max-width: 1200px;
   margin-bottom: 208px;
 }
+.companies_logos .companies_logos_container .owl-stage-outer {
+  width: 98%;
+  display: flex;
+  margin: auto;
+}
+.companies_logos .companies_logos_container .owl-stage-outer .owl-stage {
+  display: flex;
+  align-items: center;
+}
+.companies_logos .companies_logos_container article {
+  display: flex;
+  justify-content: end;
+}
+.companies_logos .companies_logos_container article img {
+  scale: 0.7;
+}
+.companies_logos .companies_logos_container article #sc_lg, .companies_logos .companies_logos_container article #dl_lg, .companies_logos .companies_logos_container article #arb_lg {
+  scale: 0.5;
+}
+.companies_logos .companies_logos_container article #sc_lg, .companies_logos .companies_logos_container article #dl_lg {
+  position: relative;
+  bottom: 2px;
+}
 
 .brex_solutions .brex_solutions_container {
   margin: auto;
