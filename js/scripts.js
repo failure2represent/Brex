@@ -18,13 +18,12 @@ $('.owl-carousel2').owlCarousel({
     autoplayTimeout: 4500,
     autoplaySpeed: 2300,
     loop: true,
-    margin: 47,
     responsive:{
                         0:{
-                            items:1
+                            items:3
                         },
-                        1100:{
-                            items:6
+                        1200:{
+                            items:8
                         }
                     }
                 });
