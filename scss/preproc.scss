@@ -58,98 +58,113 @@ $second_color: #f46a35;
     font-style: normal;
 
 }
-
-.header_container{
-    margin: auto;
-    max-width: 1200px;
-    background: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 15px;
-    margin-bottom: 20px;
-    .header_container_left{
+header{
+    
+    .header_container{
+        margin: auto;
+        max-width: 1200px;
+        background: #fff;
         display: flex;
-        gap: 29px;
-        @include max-screen(1200px){
-            margin-left: 24px;
-        }
-        @include max-screen(360px){
-            margin-left: 15px;
-        }
-        .logo{
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 15px;
+        margin-bottom: 20px;
+        .header_container_left{
             display: flex;
-        }
-        .nav_list{
-            display: flex;
-            gap: 37px;
-            @include max-screen(360px){
-                display: none;
+            gap: 29px;
+            @include max-screen(1200px){
+                margin-left: 24px;
             }
-            li{
-                a{
-                    font-family: $main_font;
-                    font-size: 14px;
-                    line-height: 143%;
-                    letter-spacing: 0.02em;
-                    color: $main_color;
+            @include max-screen(428px){
+                margin-left: 15px;
+            }
+            .logo{
+                display: flex;
+            }
+            .nav_list{
+                display: flex;
+                gap: 37px;
+                @include max-screen(428px){
+                    display: none;
                 }
-                svg{
-                    margin-left: 8px;
-                    width: 13px;
-                    height: 9px;
-                    fill: none;
-                    transition: transform 0.4s;
-                    path{
-                        fill: black;
-                        stroke: black;
-                        stroke-width: 1.92381;
-                        stroke-linecap: round;
-                        stroke-linejoin: round;
-                    }
-                }
-                &:hover{
+                li{
                     a{
-                        color: $second_color;
+                        font-family: $main_font;
+                        font-size: 14px;
+                        line-height: 143%;
+                        letter-spacing: 0.02em;
+                        color: $main_color;
                     }
                     svg{
-                        transform: rotate(180deg);
-                        transition: 0.3s;
+                        margin-left: 8px;
+                        width: 13px;
+                        height: 9px;
+                        fill: none;
+                        transition: transform 0.4s;
+                        path{
+                            fill: black;
+                            stroke: black;
+                            stroke-width: 1.92381;
+                            stroke-linecap: round;
+                            stroke-linejoin: round;
+                        }
+                    }
+                    &:hover{
+                        a{
+                            color: $second_color;
+                        }
+                        svg{
+                            transform: rotate(180deg);
+                            transition: 0.3s;
+                        }
                     }
                 }
             }
         }
-    }
-    .header_container_right{
-        display: flex;
-        gap: 30px;
-        align-items: center;
-        @include max-screen(360px){
-            margin-right: 24px;
-        }
-        @include max-screen(360px){
-            margin-right: 15px;
-            display: none;
-        }
-        a{
-            font-family: $main_font;
-            font-size: 14px;
-            line-height: 143%;
-            letter-spacing: 0.01em;
-            color: $main_color;
-            &:last-of-type{
-                background: $second_color;
-                border: 1px solid $second_color;
-                border-radius: 10px;
-                padding: 7px 26px;
-                color: #fff;
-                &:hover{
-                    color: #f2f2f2;
-                    background:  #e06030;
-                }
+        .header_container_right{
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            @include max-screen(1200px){
+                margin-right: 24px;
             }
-            &:hover{
-                color: $second_color;
+            @include max-screen(428px){
+                margin-right: 15px;
+            }
+            a{
+                font-family: $main_font;
+                font-size: 14px;
+                line-height: 143%;
+                letter-spacing: 0.01em;
+                color: $main_color;
+                &:first-of-type{
+                    @include max-screen(428px){
+                        display: none;
+                    }
+                }
+                &:nth-of-type(2){
+                    @include max-screen(428px){
+                        display: none;
+                    }
+                }
+                &:last-of-type{
+                    background: $second_color;
+                    border: 1px solid $second_color;
+                    border-radius: 10px;
+                    padding: 7px 26px;
+                    color: #fff;
+                    &:hover{
+                        color: #f2f2f2;
+                        background:  #e06030;
+                    }
+                    @include max-screen(428px){
+                        padding: 6px 10px;
+                        border-radius: 5px;
+                    }
+                }
+                &:hover{
+                    color: $second_color;
+                }
             }
         }
     }
@@ -161,12 +176,12 @@ $second_color: #f46a35;
         display: flex;
         gap: 56px;
         margin-bottom: 80px;
-        @include max-screen(360px){
+        @include max-screen(428px){
             display: inherit;
         }
         .banner_container_left{
             margin-left: 48px;
-            @include max-screen(360px){
+            @include max-screen(428px){
                 margin-left: 15px;
                 margin-right: 15px;
             }
@@ -174,7 +189,7 @@ $second_color: #f46a35;
                 padding-bottom: 76px;
                 border-bottom: 1px solid rgba(0, 0, 0, 0.1);
                 margin-bottom: 33px;
-                @include max-screen(360px){
+                @include max-screen(428px){
                     text-align: center;
                 }
                 h1{
@@ -186,7 +201,7 @@ $second_color: #f46a35;
                     padding-top: 76px;
                     padding-right: 50px;
                     margin-bottom: 36px;
-                    @include max-screen(360px){
+                    @include max-screen(428px){
                         padding-right: 0px;
                     }
                 }
@@ -199,7 +214,7 @@ $second_color: #f46a35;
                     border-radius: 10px;
                     padding: 13px 32px;
                     margin-right: 8px;
-                    @include max-screen(360px){
+                    @include max-screen(428px){
                         padding: 16px;
                     }
                     &:hover{
@@ -208,14 +223,20 @@ $second_color: #f46a35;
                         border: 1px solid $second_color;
                     }
                     &:first-of-type{
-                        @include max-screen(360px){
+                        @include max-screen(428px){
                             margin-right: 8px;
                         }
                     }
                     &:last-of-type{
-                        @include max-screen(360px){
-                            margin-left: 8px;
+                        @include max-screen(428px){
+                            margin-left: 20px;
                             margin-right: 0px;
+                        }
+                        @include max-screen(390px){
+                            margin-left: 45px;
+                        }
+                        @include max-screen(360px){
+                            margin-left: 20px;
                         }
                     }
                 }
@@ -224,7 +245,7 @@ $second_color: #f46a35;
                 padding-bottom: 31px;
                 border-bottom: 1px solid rgba(0, 0, 0, 0.1);
                 margin-bottom: 33px;
-                @include max-screen(360px){
+                @include max-screen(428px){
                     text-align: center;
                     display: inline-flex;
                     flex-direction: column;
@@ -258,9 +279,21 @@ $second_color: #f46a35;
                     line-height: 150%;
                     color: $second_color;
                     width: 22%;
+                    @include max-screen(428px){
+                        width: 34%;
+                        position: relative;
+                        left: 18px;
+                    }
+                    @include max-screen(390px){
+                        left: 10px;
+                        position: relative;
+                    }
                     @include max-screen(360px){
                         width: 33%;
+                        left: 8px;
+                        position: relative;
                     }
+                    
                     svg{
                         position: relative;
                         top: 5.5px;
@@ -283,11 +316,27 @@ $second_color: #f46a35;
             img{
                 width: 600px;
                 height: 740px;
+                @include max-screen(428px){
+                    padding-top: 32px;
+                    width: 428px;
+                    height: 528px;
+                }
+                @include max-screen(390px){
+                    padding-top: 32px;
+                    width: 390px;
+                    height: 475px;
+                }
+                @include max-screen(375px){
+                    padding-top: 32px;
+                    width: 375px;
+                    height: 460px;
+                }
                 @include max-screen(360px){
-                    padding-top: 40px;
+                    padding-top: 32px;
                     width: 360px;
                     height: 444px;
                 }
+                
             }
         }
     }
@@ -297,7 +346,7 @@ $second_color: #f46a35;
         margin: auto;
         max-width: 1200px;
         margin-bottom: 208px;
-        @include max-screen(360px){
+        @include max-screen(428px){
             margin-bottom: 104px;
         }
         .owl-stage-outer{
@@ -312,8 +361,19 @@ $second_color: #f46a35;
         article{
             display: flex;
             justify-content: end;
+            @include max-screen(428px){
+                margin-right: 10px;
+                margin-left: 10px;
+            }
             img{
                 scale: 0.7;
+                @include max-screen(428px){
+                    scale: inherit;
+                }
+                @include max-screen(360px){
+                    scale: 0.7
+                }
+                
             }
             #cb_lg{
                 position: relative;
@@ -321,7 +381,10 @@ $second_color: #f46a35;
             }
             
             #dl_lg, #arb_lg{
-                scale: 0.5
+                scale: 0.5;
+                @include max-screen(428px){
+                    scale: 0.75;
+                }
             }
             #sc_lg{
                 position: relative;
@@ -330,6 +393,9 @@ $second_color: #f46a35;
             #dl_lg{
                 position: relative;
                 bottom: 2px;
+                @include max-screen(428px){
+                    scale: 0.6
+                }
             }
             #arb_lg{
                 position: relative;
@@ -350,9 +416,13 @@ $second_color: #f46a35;
             line-height: 144%;
             letter-spacing: 0.04em;
             margin-bottom: 8px;
-            @include max-screen(360px){
+            @include max-screen(428px){
                 font-size: 32px;
                 margin: 0px 15px 32px 15px;
+            }
+            @include max-screen(390px){
+                margin-left: 15px;
+                margin-right: 15px;
             }
         }
         p{
@@ -363,15 +433,19 @@ $second_color: #f46a35;
             line-height: 168%;
             letter-spacing: 0.02em;
             margin-bottom: 64px;
-            @include max-screen(360px){
+            @include max-screen(428px){
                 font-size: 15px;
+            }
+            @include max-screen(390px){
+                margin-left: 15px;
+                margin-right: 15px;
             }
         }
         .solutions_flex{
             display: flex;
             justify-content: space-evenly;
             margin-bottom: 72px;
-            @include max-screen(360px){
+            @include max-screen(428px){
                 display: inherit;
             }
             .solutions_flex_left, .solutions_flex_right{
@@ -390,6 +464,12 @@ $second_color: #f46a35;
                     &:hover{
                         color: $second_color;
                     }
+                    @include max-screen(428px){
+                        top: 170px
+                    }
+                    @include max-screen(390px){
+                        top: 160px
+                    }
                     @include max-screen(360px){
                         top: 145px;
                     }
@@ -402,6 +482,12 @@ $second_color: #f46a35;
                     letter-spacing: 0.02em;
                     color: #fff;
                     top: 48px;
+                    @include max-screen(428px){
+                        left: calc(50% - 142px)
+                    }
+                    @include max-screen(390px){
+                        left: calc(50% - 140px)
+                    }
                     @include max-screen(360px){
                         font-size: 28px;
                         left: calc(50% - 123px);
@@ -416,12 +502,29 @@ $second_color: #f46a35;
                     font-family: $main_font;
                     top: 98px;
                     padding: 0px 52px;
+                    @include max-screen(428px){
+                        font-size: 12px;
+                        top: 110px
+                    }
+                    @include max-screen(390px){
+                        font-size: 12px;
+                        top: 98px
+                    }
                     @include max-screen(360px){
                         font-size: 12px;
                         top: 80px
                     }
                 }
                 img{
+                    @include max-screen(428px){
+                        width: 428px;
+                    }
+                    @include max-screen(390px){
+                        width: 390px;
+                    }
+                    @include max-screen(375px){
+                        width: 375px;
+                    }
                     @include max-screen(360px){
                         width: 360px;
                         height: 398px;
@@ -433,23 +536,57 @@ $second_color: #f46a35;
                     color: $main_color
                 }
                 a{
+                    @include max-screen(428px){
+                        top: 180px
+                    }
+                    @include max-screen(390px){
+                        top: 160px;
+                    }
                     @include max-screen(360px){
                         top: 150px;
                     }
                 }
                 h3{
                     left: calc(50% - 129px);
+                    @include max-screen(428px){
+                        left: calc(50% - 129px)
+                    }
+                    @include max-screen(390px){
+                        left: calc(50% - 128px)
+                    }
                     @include max-screen(360px){
                         left: calc(50% - 113px)
                     }
                 }
                 p{
                     padding: 0px 65px;
+                    @include max-screen(428px){
+                        padding: 0px 86px;
+                    }
+                    @include max-screen(390px){
+                        padding: 0px 52px;
+                        top: 103px;
+                    }
                     @include max-screen(360px){
                         padding: 0px 52px;
                     }
                 }
                 img{
+                    @include max-screen(428px){
+                        width: 428px;
+                        bottom: 6px;
+                        position: relative;
+                    }
+                    @include max-screen(390px){
+                        width: 390px;
+                        bottom: 6px;
+                        position: relative;
+                    }
+                    @include max-screen(375px){
+                        width: 375px;
+                        bottom: 6px;
+                        position: relative;
+                    }
                     @include max-screen(360px){
                         width: 360px;
                         height: 398px;
@@ -469,12 +606,12 @@ $second_color: #f46a35;
         padding-top: 95px;
         padding-left: 48px;
         padding-bottom: 80px;
-        @include max-screen(360px){
+        @include max-screen(428px){
             padding-left: 0px;
         }
         .limits_flex_top{
             margin-bottom: 60px;
-            @include max-screen(360px){
+            @include max-screen(428px){
                 text-align: center;
             }
             h3{
@@ -484,7 +621,7 @@ $second_color: #f46a35;
                 line-height: 144%;
                 letter-spacing: 0.04em;
                 margin-bottom: 21px;
-                @include max-screen(360px){
+                @include max-screen(428px){
                     font-size: 32px;
                     margin-left: 15px;
                     margin-right: 15px;
@@ -498,7 +635,7 @@ $second_color: #f46a35;
                 color: $main_color;
                 padding-right: 285px;
                 margin-bottom: 32px;
-                @include max-screen(360px){
+                @include max-screen(428px){
                     padding-right: 0px;
                     margin-left: 15px;
                     margin-right: 15px;
@@ -526,7 +663,7 @@ $second_color: #f46a35;
             border: 1px solid rgba(0, 0, 0, 0.1);
             border-radius: 10px;
             padding-top: 104px;
-            @include max-screen(360px){
+            @include max-screen(428px){
                 border-radius: 0;
             }
             h3{
@@ -538,7 +675,7 @@ $second_color: #f46a35;
                 letter-spacing: 0.04em;
                 font-weight: 500;
                 margin-bottom: 30px;
-                @include max-screen(360px){
+                @include max-screen(428px){
                     font-size: 32px; 
                     margin-bottom: 54px;          
                 }
@@ -548,7 +685,7 @@ $second_color: #f46a35;
                 gap: 100px;
                 padding-bottom: 120px;
                 padding-left: 235px;
-                @include max-screen(360px){
+                @include max-screen(428px){
                     display: inherit;
                     padding-bottom: 104px;
                     padding-left: 0px;
@@ -557,7 +694,7 @@ $second_color: #f46a35;
                 .limits_flex_left{
                     position: relative;
                     align-self: center;
-                    @include max-screen(360px){
+                    @include max-screen(428px){
                         right: inherit;
                         top: inherit;
                         display: flex;
@@ -572,7 +709,7 @@ $second_color: #f46a35;
                         margin-bottom: 5px;
                         position: relative;
                         bottom: 2px;
-                        @include max-screen(360px){
+                        @include max-screen(428px){
                             margin-bottom: 10px;
                         }
                     }
@@ -585,8 +722,10 @@ $second_color: #f46a35;
                         font-size: 14px;
                         line-height: 144%;
                         letter-spacing: 0.03em;
-                        font-weight: 500;
-                        
+                        font-weight: 600;
+                        @include max-screen(428px){
+                            font-size: 13px;
+                        }
                     }
                     p{
                         font-family: 'robotomedium';
@@ -595,12 +734,15 @@ $second_color: #f46a35;
                         line-height: 144%;
                         letter-spacing: 0.01em;
                         font-weight: 500;
+                        @include max-screen(428px){
+                            font-size: 12px;
+                        }
                     }
                 }
                 .limits_flex_right{
                     display: block;
                     width: 100%;
-                    @include max-screen(360px){
+                    @include max-screen(428px){
                         display: inherit;
                         margin-right: 15px;
                         margin-left: 15px;
@@ -610,7 +752,7 @@ $second_color: #f46a35;
                         li{
                             position: relative;
                             margin-bottom: 12px;
-                            @include max-screen(360px){
+                            @include max-screen(428px){
                                 text-align: center;
                             }
                             a{
@@ -624,11 +766,6 @@ $second_color: #f46a35;
                                 padding: 13px 60px;
                                 max-width: 416px;
                                 display: block;
-                                @include max-screen(360px){
-                                    width: 100%;
-                                    display: block;
-                                    padding: 13px 0px;
-                                }
                             }
                             &:hover{
                                 a{
@@ -640,6 +777,12 @@ $second_color: #f46a35;
                                 position: absolute;
                                 top: 12px;
                                 left: 20px;
+                                @include max-screen(428px){
+                                    left: 110px
+                                }
+                                @include max-screen(390px){
+                                    left: 95px
+                                }
                                 @include max-screen(360px){
                                     left: 80px
                                 }
@@ -669,9 +812,15 @@ $second_color: #f46a35;
                 width: inherit;
                 display: inline;
                 position: relative;
-                right: 7px;
+                right: 9px;
+                @include max-screen(428px){
+                    right: 14px;
+                }
+                @include max-screen(390px){
+                    right: 16px;
+                }
                 @include max-screen(360px){
-                    right: 3px;
+                    right: 20px;
                 }
             }
             h3{
@@ -681,10 +830,16 @@ $second_color: #f46a35;
                 line-height: 109%;
                 color: $main_color;
                 font-family: $main_font;
-                @include max-screen(360px){
-                    padding: 0px 13px;
+                @include max-screen(428px){
                     font-size: 18px;
                     margin-bottom: 24px;
+                    padding: 0 15px;
+                }
+                @include max-screen(390px){
+                    pad: 0 15px;
+                }
+                @include max-screen(360px){
+                    padding: 0px 13px;
                 }
             }
             p{
@@ -693,7 +848,7 @@ $second_color: #f46a35;
                 letter-spacing: 0.02em;
                 color: $main_color;
                 font-family: $main_font;
-                @include max-screen(360px){
+                @include max-screen(428px){
                     font-size: 12px;
                 }
             }
@@ -701,14 +856,14 @@ $second_color: #f46a35;
         .owl-stage-outer{
             width: 70%;
             left: calc(50% - 420px);
-            @include max-screen(360px){
+            @include max-screen(428px){
                 left: inherit;
                 width: inherit;
             }
         }
         .owl-item{
             left: -169px;
-            @include max-screen(360px){
+            @include max-screen(428px){
                 left: inherit;
             }
         }
@@ -717,6 +872,12 @@ $second_color: #f46a35;
                 &.owl-next, &.owl-prev{
                     position: absolute;
                     top: 340px;
+                    @include max-screen(428px){
+                        top: 495px
+                    }
+                    @include max-screen(390px){
+                        top: 500px
+                    }
                     @include max-screen(360px){
                         top: 400px
                     }
@@ -729,9 +890,10 @@ $second_color: #f46a35;
                         background-repeat: no-repeat;
                         scale: 1.667;
                         background-size: contain;
-                        @include max-screen(360px){
+                        @include max-screen(428px){
                             scale: 1.4;
                         }
+                        
                     }
                     &:hover{
                         &:after{
@@ -744,8 +906,14 @@ $second_color: #f46a35;
                 }
                 &.owl-prev{
                     left: 60px;
+                    @include max-screen(428px){
+                        left: 110px
+                    }
+                    @include max-screen(390px){
+                        left: 95px
+                    }
                     @include max-screen(360px){
-                        left: 80px
+                        left: 70px
                     }
                     &:after{
                         transform: rotate(180deg);
@@ -753,8 +921,14 @@ $second_color: #f46a35;
                 }
                 &.owl-next{
                     right: 60px;
+                    @include max-screen(428px){
+                        right: 110px
+                    }
+                    @include max-screen(390px){
+                        right: 95px;
+                    }
                     @include max-screen(360px){
-                        right: 80px;
+                        right: 70px;
                     }
                 }
             }
@@ -775,7 +949,7 @@ $second_color: #f46a35;
             color: $main_color;
             padding: 0px 235px;
             margin-bottom: 79px;
-            @include max-screen(360px){
+            @include max-screen(428px){
                 padding: inherit;
                 margin-left: 15px;
                 margin-right: 15px;
@@ -786,7 +960,7 @@ $second_color: #f46a35;
             padding: 0px 48px;
             display: flex;
             justify-content: space-between;
-            @include max-screen(360px){
+            @include max-screen(428px){
                 padding: inherit;
                 display: inline-block;
                 margin-left: 15px;
@@ -794,7 +968,7 @@ $second_color: #f46a35;
             }
             article{
                 max-width: 325px;
-                @include max-screen(360px){
+                @include max-screen(428px){
                     display: flex;
                     flex-direction: column;
                     align-items: center;
@@ -811,7 +985,7 @@ $second_color: #f46a35;
                     font-family: $main_font;
                     color: $main_color;
                     margin-bottom: 22px;
-                    @include max-screen(360px){
+                    @include max-screen(428px){
                         font-size: 16px;
                         text-align: center;
                     }
@@ -823,6 +997,16 @@ $second_color: #f46a35;
                     line-height: 150%;
                     color: $second_color;
                     width: 45%;
+                    @include max-screen(428px){
+                        left: 25px;
+                        position: relative;
+                    }
+                    @include max-screen(390px){
+                        left: 16px
+                    }
+                    @include max-screen(360px){
+                        left: 11px;
+                    }
                     svg{
                         margin-left: 5px;
                         position: relative;
@@ -850,7 +1034,7 @@ $second_color: #f46a35;
         padding: 0px 0px 0px 49px;
         display: flex;
         margin-bottom: 161px;
-        @include max-screen(360px){
+        @include max-screen(428px){
             padding: inherit;
             flex-direction: column;
             align-items: center;
@@ -862,14 +1046,14 @@ $second_color: #f46a35;
             &:nth-child(3){
                 padding: 75px 100px;
                 border-right: none;
-                @include max-screen(360px){
+                @include max-screen(428px){
                     border-right: 1px solid rgba(0, 0, 0, 0.1);
                 }
             }
             &:last-of-type{
                 border-left: none;
                 padding: 75px 82px;
-                @include max-screen(360px){
+                @include max-screen(428px){
                     border-left: 1px solid rgba(0, 0, 0, 0.1);
                 }
             }
@@ -883,14 +1067,14 @@ $second_color: #f46a35;
         margin: auto;
         padding: 32px 48px;
         display: flex;
-        @include max-screen(360px){
+        @include max-screen(428px){
             padding: inherit;
             flex-direction: column;
             align-items: center;
         }
         .banner_bottom_left{
             padding-top: 110px;
-            @include max-screen(360px){
+            @include max-screen(428px){
                 text-align: center;
                 margin-left: 15px;
                 margin-right: 15px;
@@ -904,7 +1088,7 @@ $second_color: #f46a35;
                 color: $main_color;
                 padding-right: 90px;
                 margin-bottom: 27px;
-                @include max-screen(360px){
+                @include max-screen(428px){
                     font-size: 36px;
                     padding-right: inherit;
                 }
@@ -917,7 +1101,7 @@ $second_color: #f46a35;
                 color: $main_color;
                 margin-bottom: 33px;
                 padding-right: 110px;
-                @include max-screen(360px){
+                @include max-screen(428px){
                     font-size: 16px;
                     padding-right: inherit;
                 }
@@ -931,7 +1115,7 @@ $second_color: #f46a35;
                 border-radius: 10px;
                 padding: 13px 32px;
                 margin-right: 8px;
-                @include max-screen(360px){
+                @include max-screen(428px){
                     padding: 13px 13px;
                     margin-right: 0px;
                 }
@@ -941,12 +1125,12 @@ $second_color: #f46a35;
                     background: $second_color;
                 }
                 &:first-of-type{
-                    @include max-screen(360px){
+                    @include max-screen(428px){
                         margin-right: 8px;
                     }
                 }
                 &:last-of-type{
-                    @include max-screen(360px){
+                    @include max-screen(428px){
                         margin-left: 8px;
                         margin-right: 0px;
                     }
@@ -958,6 +1142,18 @@ $second_color: #f46a35;
             img{
                 position: relative;
                 left: 20px;
+                @include max-screen(428px){
+                    left: inherit;
+                    width: 428px;
+                }
+                @include max-screen(390px){
+                    left: inherit;
+                    width: 390px;
+                }
+                @include max-screen(375px){
+                    left: inherit;
+                    width: 375px;
+                }
                 @include max-screen(360px){
                     left: inherit;
                     width: 360px;
@@ -972,27 +1168,35 @@ footer{
         margin: auto;
         max-width: 1200px;
         padding: 122px 0px 0px 48px;
+        @include max-screen(428px){
+            padding: 82px 0px;
+        }
         @include max-screen(360px){
             padding: 62px 0px;
         }
         .footer_top_flex{
             display: flex;
             margin-bottom: 97px;
-            @include max-screen(360px){
+            @include max-screen(428px){
                 flex-wrap: wrap;
                 margin-bottom: 54px;
                 margin-left: 15px;
+                justify-content: space-between;
             }
             article{
                 margin-right: 200px;
+                @include max-screen(428px){
+                    margin-right: 70px;
+                }
+                @include max-screen(390px){
+                    margin-right: 30px;
+                }
                 @include max-screen(360px){
-                    margin-right: 15px;
-                    text-align: start;
+                    margin-right: 25px;
                 }
                 &:first-of-type{
                     margin-right: 142px;
-                    @include max-screen(360px){
-                        text-align: start;
+                    @include max-screen(428px){
                         margin-bottom: 34px;
                     }
                 }
@@ -1003,12 +1207,12 @@ footer{
                     color: #fff;
                     font-family: $main_font;
                     margin-bottom: 7px;
-                    @include max-screen(360px){
+                    @include max-screen(428px){
                         margin-bottom: 14px;
                     }
                 }
                 ul{
-                    @include max-screen(360px){
+                    @include max-screen(428px){
                         margin-bottom: 24px;
                     }
                     li{
@@ -1022,7 +1226,7 @@ footer{
                             line-height: 157%;
                             color: #bcbdbd;
                             font-family: $main_font;
-                            @include max-screen(360px){
+                            @include max-screen(428px){
                                 font-size: 12px;
                             }
                         }
@@ -1040,9 +1244,13 @@ footer{
             gap: 192px;
             margin-bottom: 131px;
             align-items: center;
-            @include max-screen(360px){
+            @include max-screen(428px){
                 flex-wrap: wrap;
                 justify-content: center;
+                gap: 40px;
+                flex-direction: column;
+            }
+            @include max-screen(360px){
                 gap: 34px
             }
             .mid_left, .mid_right{
@@ -1063,7 +1271,7 @@ footer{
         }
         .footer_bottom_flex{
             padding-bottom: 58px;
-            @include max-screen(360px){
+            @include max-screen(428px){
                 margin-left: 15px;
                 margin-right: 15px;
             }
