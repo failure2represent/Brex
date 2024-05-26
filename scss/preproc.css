@@ -1188,15 +1188,17 @@ header .header_container .header_container_right a:hover {
 @media screen and (max-width: 428px) {
   .companies_logos2 .companies_logos2_container article:nth-child(3) {
     border-right: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: none;
   }
 }
-.companies_logos2 .companies_logos2_container article:last-of-type {
+.companies_logos2 .companies_logos2_container article:nth-child(4) {
   border-left: none;
   padding: 75px 82px;
 }
 @media screen and (max-width: 428px) {
-  .companies_logos2 .companies_logos2_container article:last-of-type {
+  .companies_logos2 .companies_logos2_container article:nth-child(4) {
     border-left: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: none;
   }
 }
 
